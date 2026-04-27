@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최연수 | 포트폴리오</title>
+    <style>
+        /* 기본 스타일 설정 */
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #003366; /* 금오공대 느낌의 신뢰감 있는 블루 */
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* 컨테이너 */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        /* 섹션 공통 스타일 */
+        section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        /* 자기소개 스타일 */
+        .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-text b {
+            color: #003366;
+        }
+
+        /* 커리어 카드 스타일 */
+        .career-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .career-card {
+            background: #f1f4f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #003366;
+            transition: transform 0.3s ease;
+        }
+
+        .career-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .career-card h3 {
+            margin-top: 0;
+            color: #222;
+            font-size: 1.2rem;
+        }
+
+        /* 푸터 */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* 반응형 대응 */
+        @media (max-width: 600px) {
+            .profile-info {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CHOI YEON SU</h1>
+        <p>금오공과대학교 컴퓨터공학부 | Creative Developer</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- 자기소개 섹션 -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="profile-info">
+                <div class="profile-text">
+                    <p>안녕하세요! <b>금오공과대학교 컴퓨터공학부 2학년</b>에 재학 중인 <b>최연수</b>입니다.</p>
+                    <p>저는 코드를 통해 문제를 해결하고, 새로운 가치를 창출하는 것에 즐거움을 느낍니다. 특히 사용자와 상호작용하는 게임 개발과 기술을 나누는 멘토링 활동에 깊은 관심을 가지고 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 커리어 섹션 -->
+        <section id="career">
+            <h2>Career</h2>
+            <div class="career-grid">
+                <!-- 대회 우승 -->
+                <div class="career-card">
+                    <h3>🏆 대회 우승</h3>
+                    <p>창의적인 아이디어와 기술력을 바탕으로 교내외 대회에 참가하여 우승을 차지했습니다. 팀워크와 문제 해결 능력을 기를 수 있었던 소중한 경험이었습니다.</p>
+                </div>
+
+                <!-- 게임 개발 -->
+                <div class="career-card">
+                    <h3>🎮 게임 개발</h3>
+                    <p>직접 기획부터 구현까지 참여하여 게임을 개발했습니다. 사용자 경험(UX)을 고려한 로직 설계와 최적화에 집중하며 프로젝트를 완수했습니다.</p>
+                </div>
+
+                <!-- Unity 멘토 활동 -->
+                <div class="career-card">
+                    <h3>💡 Unity 멘토 활동</h3>
+                    <p>Unity 엔진을 처음 접하는 동료나 후배들을 대상으로 멘토링을 진행했습니다. 지식을 공유하며 함께 성장하는 가치를 실천하고 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Choi Yeon Su. All rights reserved.</p>
+        <p>Kumoh National Institute of Technology - Computer Engineering</p>
+    </footer>
+
+</body>
+</html>
